@@ -18,7 +18,7 @@ export const getCharacter = async (req, res) => {
     if (character) {
       return res.json(character);
     }
-
+ 
     res.status(404).json({ message: "Character not found!" });
   } catch (error) {
     console.error(error);
